@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: Dreamcodeio/pr-has-label-action@0.1
+    - uses: Dreamcodeio/pr-has-label-action@v0.1
 
