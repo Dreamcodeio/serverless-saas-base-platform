@@ -11,4 +11,7 @@ jobs:
 
     steps:
     - uses: Dreamcodeio/pr-has-label-action@master
+      with:
+        label: PROVISION:FEATURE_BRANCH
+
 
