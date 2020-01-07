@@ -16,3 +16,9 @@ jobs:
         label: PROVISION:FEATURE_BRANCH
     - name: Does 'pull_request' has ${{ steps.checkLabel.outputs.checkedLabel }} label? 
       run: echo "${{ steps.checkLabel.outputs.hasLabel }}" 
+    - uses: Dreamcodeio/whats-the-pr-branch@master
+      id: branchName
+      with:
+        prefix: feature/
+    - name: What's the PR branch name? 
+      run: echo "${{ steps.branchName.outputs.branchName }}" 
