@@ -19,6 +19,6 @@ jobs:
     - uses: Dreamcodeio/whats-the-pr-branch@master
       id: branchName
       with:
-        prefix: feature/
+        prefix: feature/,hotfix/
     - name: What's the PR branch name? 
       run: echo "${{ steps.branchName.outputs.branchName }}" 
